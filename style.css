@@ -213,7 +213,6 @@ p {
 .catchcopy {
     animation-delay: 1.8s;
 }
-
 .story {
     animation-delay: 2.8s;
 }
@@ -228,4 +227,29 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.countdown {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.countdown-title {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.timer-box {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.45);
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+#timer {
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 0 10px white;
 }
