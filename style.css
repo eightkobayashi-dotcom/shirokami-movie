@@ -6,7 +6,6 @@ body {
     min-height: 100vh;
     color: white;
     font-family: sans-serif;
-    animation: backgroundMove 20s infinite alternate;
 }
 
 .container {
@@ -199,17 +198,6 @@ p {
     100% {
         opacity: 0;
         visibility: hidden;
-    }
-}
-@keyframes backgroundMove {
-    from {
-        background-position: center;
-        background-size: 100%;
-    }
-
-    to {
-        background-position: center;
-        background-size: 110%;
     }
 }
 .fade-item {
