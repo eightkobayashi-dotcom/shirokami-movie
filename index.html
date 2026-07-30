@@ -61,17 +61,22 @@
     </div>
 </div>
 </body>
+
 <script>
 const image = document.querySelector(".gallery img");
 
-window.addEventListener("scroll", () => {
+function showImage() {
     const imageTop = image.getBoundingClientRect().top;
 
-    if (imageTop < window.innerHeight - 100) {
+    if (imageTop < window.innerHeight * 0.9) {
         image.classList.add("show");
     }
-});
+}
+
+window.addEventListener("scroll", showImage);
+window.addEventListener("load", showImage);
 </script>
+
 <script>
 const target = new Date("2026/9/5 11:25:00");
 

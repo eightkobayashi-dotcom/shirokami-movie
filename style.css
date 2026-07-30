@@ -400,6 +400,8 @@ html {
 .gallery img {
     width: 100%;
     display: block;
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 .gallery img.show {
