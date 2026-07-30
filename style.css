@@ -385,3 +385,21 @@ html {
     font-size: 24px;
     font-weight: bold;
 }
+.gallery {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.gallery img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease;
+}
+
+.gallery img.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -30,6 +30,9 @@
             一枚の紙に込められた記憶が、未来へつながる物語。
         </p>
     </div>
+    <div class="gallery fade-in">
+        <img src="images/poster.jpg" alt="映画ポスター">
+    </div>
     <div class="countdown">
         <p class="countdown-title">上映まであと</p>
 
@@ -54,6 +57,17 @@
     </div>
 </div>
 </body>
+<script>
+const image = document.querySelector(".gallery img");
+
+window.addEventListener("scroll", () => {
+    const imageTop = image.getBoundingClientRect().top;
+
+    if (imageTop < window.innerHeight - 100) {
+        image.classList.add("show");
+    }
+});
+</script>
 <script>
 const target = new Date("2026/9/5 11:25:00");
 
