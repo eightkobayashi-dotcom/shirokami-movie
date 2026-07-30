@@ -303,17 +303,28 @@ p {
     animation: menuShow 1s ease forwards;
     animation-delay: 4s;
     backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    padding: 8px 15px;
-    border-radius: 20px;
-    transition: 0.3s;
+
+    padding: 10px 20px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    border-radius: 30px;
+
+    font-size: 16px;
 }
 .menu a:hover {
-    background-color: rgba(255,255,255,0.2);
+    background: white;
+    color: black;
+
+    transform: translateY(-2px);
 }
 
 .menu a:active {
@@ -444,4 +455,7 @@ html {
         font-weight: bold;
         box-shadow: 0 5px 20px rgba(0,0,0,0.4);
     }
+}
+.menu a {
+    font-family: 'Montserrat', sans-serif;
 }
