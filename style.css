@@ -166,7 +166,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 25vh;
+    padding-top: 15vh;
     z-index: 999;
     animation: openingFade 3s forwards;
 }
