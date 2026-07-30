@@ -22,6 +22,7 @@ h1 {
     letter-spacing: 4px;
     text-shadow: 0 0 15px black;
     animation: fadeIn 2s ease;
+    font-family: 'Noto Serif JP', serif;
 }
 
 p {
@@ -175,6 +176,7 @@ p {
     opacity: 0;
     animation: titleFade 2s 0.5s forwards;
     white-space: nowrap;
+    font-family: 'Noto Serif JP', serif;
 }
 
 @keyframes titleFade {
@@ -338,7 +340,7 @@ html {
         white-space: nowrap;
         letter-spacing: 2px;
     }
-    
+
     .catchcopy {
         font-size: 13px;
         line-height: 1.7;
