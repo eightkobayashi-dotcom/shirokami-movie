@@ -302,12 +302,22 @@ p {
     opacity: 0;
     animation: menuShow 1s ease forwards;
     animation-delay: 4s;
+    backdrop-filter: blur(10px);
 }
 .menu a {
     color: white;
-    margin: 0 15px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.menu a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.menu a:active {
+    transform: scale(0.95);
 }
 
 .menu a:hover {
@@ -366,7 +376,7 @@ html {
     }
 
     .menu a {
-        font-size: 13px;
+        font-size: 18px;
         margin: 0 4px;
     }
 
