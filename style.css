@@ -296,8 +296,10 @@ p {
     text-align: center;
     background-color: rgba(0,0,0,0.7);
     z-index: 1000;
+
     opacity: 0;
-    animation-delay: 3s;
+    animation: menuShow 1s ease forwards;
+    animation-delay: 4s;
 }
 .menu a {
     color: white;
@@ -312,4 +314,13 @@ p {
 
 html {
     scroll-behavior: smooth;
+}
+@keyframes menuShow {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
