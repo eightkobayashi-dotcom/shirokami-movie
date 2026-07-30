@@ -56,7 +56,9 @@
     </div>
     <div id="reserve">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyabLPAphyDqj_KKCKdhzAS1zDxVyMf5P0okwtWepVIZuEYg/viewform?usp=publish-editor">
-        <button class="reserve-button">予約する</button>
+        <button class="reserve-button" id="main-reserve-button">
+            予約する
+        </button>
     </a>
     </div>
 </div>
@@ -65,7 +67,6 @@
         予約する
     </a>
 </div>
-</body>
 
 <script>
 const image = document.querySelector(".gallery img");
@@ -105,4 +106,23 @@ function countdown() {
 countdown();
 setInterval(countdown, 60000);
 </script>
+
+<script>
+const reserveButton = document.getElementById("main-reserve-button");
+const mobileReserve = document.querySelector(".mobile-reserve");
+
+function checkReserveButton() {
+    const rect = reserveButton.getBoundingClientRect();
+
+    if (rect.top < window.innerHeight) {
+        mobileReserve.style.display = "none";
+    } else {
+        mobileReserve.style.display = "block";
+    }
+}
+
+window.addEventListener("scroll", checkReserveButton);
+window.addEventListener("load", checkReserveButton);
+</script>
+</body>
 </html>
