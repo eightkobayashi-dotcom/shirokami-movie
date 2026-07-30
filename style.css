@@ -393,17 +393,13 @@ html {
     font-weight: bold;
 }
 .gallery {
-    text-align: center;
+    text-align: 100%;
     margin: 80px 0;
 }
 
 .gallery img {
     width: 100%;
-    max-width: 800px;
-    border-radius: 10px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease;
+    display: block;
 }
 
 .gallery img.show {
