@@ -380,6 +380,13 @@ html {
     .info-box p:last-child {
     font-size: 20px;
     }
+    .gallery {
+    margin: 50px 0;
+    }
+    .gallery img {
+    width: 100%;
+    border-radius: 0;
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -391,8 +398,8 @@ html {
 }
 
 .gallery img {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     border-radius: 10px;
     opacity: 0;
     transform: translateY(50px);
