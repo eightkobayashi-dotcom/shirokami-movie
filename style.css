@@ -408,3 +408,30 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+.mobile-reserve {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .mobile-reserve {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+
+    .mobile-reserve a {
+        display: block;
+        padding: 15px 40px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+}
