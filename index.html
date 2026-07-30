@@ -106,7 +106,6 @@ function countdown() {
 countdown();
 setInterval(countdown, 60000);
 </script>
-
 <script>
 const reserveButton = document.getElementById("main-reserve-button");
 const mobileReserve = document.querySelector(".mobile-reserve");
@@ -114,7 +113,7 @@ const mobileReserve = document.querySelector(".mobile-reserve");
 function checkReserveButton() {
     const rect = reserveButton.getBoundingClientRect();
 
-    if (rect.top < window.innerHeight) {
+    if (rect.bottom< window.innerHeight) {
         mobileReserve.style.display = "none";
     } else {
         mobileReserve.style.display = "block";
