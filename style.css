@@ -176,7 +176,6 @@ p {
     opacity: 0;
     animation: titleFade 2s 0.5s forwards;
     white-space: nowrap;
-    font-family: 'Noto Serif JP', serif;
 }
 
 @keyframes titleFade {
@@ -295,7 +294,7 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
     background-color: rgba(0,0,0,0.7);
     z-index: 1000;
@@ -378,4 +377,11 @@ html {
     #timer {
         font-size: 26px;
     }
+    .info-box p:last-child {
+    font-size: 20px;
+    }
+}
+.info-box p:last-child {
+    font-size: 24px;
+    font-weight: bold;
 }
