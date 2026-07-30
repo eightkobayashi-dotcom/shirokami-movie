@@ -80,3 +80,16 @@ p {
     border-radius: 15px;
     line-height: 1.8;
 }
+.info {
+    margin-top: 40px;
+}
+
+.info-box h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.info-box p {
+    font-size: 18px;
+    line-height: 1.6;
+}
