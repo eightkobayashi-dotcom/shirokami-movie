@@ -45,7 +45,9 @@ p {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
 .reserve-button:hover {
@@ -252,4 +254,33 @@ p {
     letter-spacing: 2px;
     margin: 0;
     text-shadow: 0 0 10px white;
+}
+.reserve-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.6);
+    transform: skewX(-30deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    20% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+}
+
+.reserve-button:active {
+    transform: scale(0.92);
 }
