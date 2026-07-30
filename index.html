@@ -17,7 +17,10 @@
             一枚の紙に込められた記憶が、未来へつながる物語。
         </p>
     </div>
-
+    <div class="countdown">
+        <p>上映まであと</p>
+        <p id="timer">計算中...</p>
+    </div>
     <div class="info">
     <div class="info-box">
         <h2>上映日時</h2>
@@ -32,7 +35,29 @@
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyabLPAphyDqj_KKCKdhzAS1zDxVyMf5P0okwtWepVIZuEYg/viewform?usp=publish-editor">
         <button class="reserve-button">予約する</button>
     </a>
-
 </div>
 </body>
+<script>
+const target = new Date("2026/9/5 11:25:00");
+
+function countdown() {
+    const now = new Date();
+    const diff = target - now;
+
+    if (diff <= 0) {
+        document.getElementById("timer").textContent = "上映時間です";
+        return;
+    }
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const minutes = Math.floor((diff / (1000 * 60)) % 60);
+
+    document.getElementById("timer").textContent =
+        `${days}日 ${hours}時間 ${minutes}分`;
+}
+
+countdown();
+setInterval(countdown, 60000);
+</script>
 </html>

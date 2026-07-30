@@ -21,6 +21,7 @@ h1 {
     font-weight: bold;
     letter-spacing: 4px;
     text-shadow: 0 0 15px black;
+    animation: fadeIn 2s ease;
 }
 
 p {
@@ -92,4 +93,28 @@ p {
 .info-box p {
     font-size: 18px;
     line-height: 1.6;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.reserve-button {
+    animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
 }
