@@ -280,7 +280,9 @@ p {
         left: 150%;
     }
 }
-
 .reserve-button:active {
-    transform: scale(0.92);
+    transform: scale(0.96);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    transition: transform 0.15s, box-shadow 0.15s;
 }
