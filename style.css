@@ -16,18 +16,16 @@ body {
 
 h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 150px;
     font-weight: bold;
-    letter-spacing: 6px;
+    letter-spacing: 3px;
     color: #ffffff;
     text-shadow:
         0 0 10px rgba(0,0,0,0.8),
         0 0 20px rgba(0,0,0,0.6);
     animation: fadeIn 2s ease;
     font-family: 'Noto Serif JP', serif;
-    border-bottom: 2px solid rgba(255,255,255,0.6);
-    display: inline-block;
     padding-bottom: 10px;
 }
 
