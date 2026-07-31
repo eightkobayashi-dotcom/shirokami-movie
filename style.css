@@ -100,15 +100,6 @@ p {
     margin-top: 40px;
 }
 
-.info-box h2 {
-    margin-bottom: 15px;
-    font-size: 22px;
-}
-
-.info-box p {
-    font-size: 18px;
-    line-height: 1.6;
-}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -133,17 +124,7 @@ p {
         transform: translateY(-8px);
     }
 }
-.countdown {
-    margin: 30px auto;
-    text-align: center;
-    font-size: 20px;
-    text-shadow: 0 0 10px black;
-}
 
-#timer {
-    font-size: 32px;
-    font-weight: bold;
-}
 .ticket {
     margin: 40px auto;
     padding: 30px;
@@ -251,6 +232,8 @@ p {
 .countdown {
     margin: 40px auto;
     text-align: center;
+    font-size: 20px;
+    text-shadow: 0 0 10px black;
 }
 
 .countdown-title {
@@ -477,12 +460,6 @@ html {
         font-weight: bold;
         box-shadow: 0 5px 20px rgba(0,0,0,0.4);
     }
-}
-.menu a {
-    font-family: 'Montserrat', sans-serif;
-}
-.menu a {
-    font-family: 'Montserrat', sans-serif;
 }
 .subtitle {
     text-align: center;
