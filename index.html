@@ -132,18 +132,5 @@ window.addEventListener("scroll", checkReserveButton);
 window.addEventListener("load", checkReserveButton);
 </script>
 
-<script>
-window.addEventListener("scroll", () => {
-
-    const scroll = window.scrollY;
-
-    const scale = 1 + scroll * 0.0002;
-
-    document.body.style.backgroundSize =
-        `${scale * 100}%`;
-
-});
-</script>
-
 </body>
 </html>
