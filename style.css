@@ -507,6 +507,15 @@ html {
     0 15px 40px rgba(0,0,0,0.6);
 
     }
+    .story p {
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    letter-spacing: 1px;
+
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -957,5 +966,53 @@ body {
         rgba(255,255,255,0.6),
         transparent
     );
+
+}
+.story {
+
+    position: relative;
+
+    background: transparent;
+
+    padding: 40px 20px;
+
+    width: 90%;
+
+    max-width: 550px;
+
+    border-radius: 0;
+
+}
+
+
+.story::before {
+
+    content: "STORY";
+
+    display: block;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 8px;
+
+    opacity: 0.6;
+
+    margin-bottom: 25px;
+
+}
+
+
+.story p {
+
+    font-size: 18px;
+
+    line-height: 2.2;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+    0 0 10px rgba(0,0,0,0.8);
 
 }
