@@ -413,6 +413,10 @@ html {
     width: 100%;
     border-radius: 0;
     }
+    .section-title {
+    font-size: 22px;
+    letter-spacing: 4px;
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -479,4 +483,31 @@ html {
     font-size: 30px;
     font-weight: bold;
     line-height: 1.4;
+}
+.section-title {
+    text-align: center;
+    margin: 120px 0 40px;
+
+    font-size: 28px;
+    letter-spacing: 8px;
+
+    color: rgba(255,255,255,0.9);
+
+    font-family: 'Montserrat', sans-serif;
+
+    position: relative;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 120px;
+    height: 1px;
+
+    background: rgba(255,255,255,0.4);
+
+    margin: 15px auto;
 }
