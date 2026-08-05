@@ -557,6 +557,14 @@ html {
     body {
     background-attachment: scroll;
     }
+    .concept-section,
+    .info-section {
+
+        padding-top: 80px;
+
+        padding-bottom: 80px;
+
+    }
 }
 .subtitle {
     text-align: center;
@@ -912,4 +920,42 @@ html {
 }
 body {
     background-attachment: fixed;
+}
+.concept-section,
+.info-section {
+
+    position: relative;
+
+    padding-top: 120px;
+
+    padding-bottom: 120px;
+
+}
+
+
+.concept-section::after,
+.info-section::after {
+
+    content: "";
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 180px;
+
+    height: 1px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.6),
+        transparent
+    );
+
 }
