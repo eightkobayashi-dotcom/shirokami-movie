@@ -362,7 +362,9 @@ p {
     z-index: 1000;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     gap: 35px;
@@ -374,6 +376,13 @@ p {
     );
 
     backdrop-filter: blur(8px);
+
+    opacity: 0;
+
+    animation:
+    menuShow 1s ease forwards;
+
+    animation-delay: 4s;
 
 }
 .menu a {
@@ -389,8 +398,6 @@ p {
     letter-spacing: 4px;
 
     padding: 8px 5px;
-
-    width: auto;
 
     position: relative;
 
