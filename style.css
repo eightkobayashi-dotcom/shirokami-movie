@@ -47,7 +47,7 @@ body {
     margin: 0 auto;
 }
 
-h1 {
+.title {
     text-align: center;
     font-size: 60px;
     margin-top: 150px;
@@ -225,7 +225,7 @@ p {
     animation: openingFade 3s forwards;
 }
 
-.opening h1 {
+.opening-title {
     color: white;
     font-size: 50px;
     opacity: 0;
@@ -435,7 +435,7 @@ html {
 }
 @media (max-width: 600px) {
 
-    h1 {
+    .title {
         font-size: 38px;
         margin-top: 120px;
         line-height: 1.4;
@@ -443,7 +443,7 @@ html {
         letter-spacing: 1px;
     }
 
-    .opening h1 {
+    .opening-title {
         font-size: 32px;
         white-space: nowrap;
         letter-spacing: 2px;
