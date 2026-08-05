@@ -583,6 +583,17 @@ html {
     font-size: 24px;
 
     }
+    .footer h2 {
+
+    font-size: 22px;
+
+    }
+
+    .footer p {
+
+    font-size: 11px;
+
+    }
 }
 .subtitle {
     text-align: center;
@@ -1100,4 +1111,58 @@ body {
 
 .delay-2 {
     transition-delay: 0.5s;
+}
+.footer {
+
+    margin-top: 100px;
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    background:
+    rgba(0,0,0,0.35);
+
+    border-top:
+    1px solid rgba(255,255,255,0.2);
+
+}
+
+
+.footer h2 {
+
+    font-family: 'Noto Serif JP', serif;
+
+    font-size: 28px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.footer p {
+
+    font-family: 'Montserrat', sans-serif;
+
+    letter-spacing: 5px;
+
+    font-size: 13px;
+
+    opacity: 0.7;
+
+}
+
+
+.footer small {
+
+    display: block;
+
+    margin-top: 30px;
+
+    font-size: 12px;
+
+    opacity: 0.5;
+
 }
