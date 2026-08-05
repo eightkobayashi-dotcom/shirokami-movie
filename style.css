@@ -579,60 +579,6 @@ html {
     display: none;
 }
 
-@media (max-width: 600px) {
-
-    .mobile-reserve {
-        display: block;
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 9999;
-    }
-
-    .mobile-reserve a {
-        display: block;
-        padding: 15px 40px;
-        background: white;
-        color: black;
-        text-decoration: none;
-        border-radius: 50px;
-        font-size: 18px;
-        font-weight: bold;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
-    }
-    body {
-    background-attachment: scroll;
-    }
-    .concept-section,
-    .info-section {
-
-        padding-top: 80px;
-
-        padding-bottom: 80px;
-
-    }
-    .play-button {
-
-    width: 65px;
-
-    height: 65px;
-
-    font-size: 24px;
-
-    }
-    .footer h2 {
-
-    font-size: 22px;
-
-    }
-
-    .footer p {
-
-    font-size: 11px;
-
-    }
-}
 .subtitle {
     text-align: center;
     color: rgba(255,255,255,0.8);
@@ -1233,5 +1179,165 @@ body {
         0 0 10px rgba(255,255,255,0.3),
         0 0 25px rgba(255,255,255,0.2),
         0 5px 30px rgba(0,0,0,0.8);
+
+}
+@media (max-width: 600px) {
+
+    .title {
+        font-size: 38px;
+        margin-top: 120px;
+        line-height: 1.4;
+        white-space: nowrap;
+        letter-spacing: 1px;
+    }
+
+    .opening-title {
+        font-size: 32px;
+        white-space: nowrap;
+        letter-spacing: 2px;
+    }
+
+    .catchcopy {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .story {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .story p {
+        font-size: 15px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+
+
+    .info-box {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .info-box p {
+        font-size: 22px;
+    }
+
+
+    .reserve-button {
+        width: 230px;
+        height: 55px;
+        font-size: 18px;
+    }
+
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 13px;
+        margin: 0 4px;
+        letter-spacing: 2px;
+    }
+
+
+    .countdown-title {
+        font-size: 16px;
+    }
+
+    #timer {
+        font-size: 26px;
+    }
+
+
+    .gallery {
+        margin: 50px 0;
+    }
+
+    .gallery img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+    .section-title {
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+
+
+    .container:first-of-type {
+        min-height: 75vh;
+    }
+
+
+    .hero-video {
+        height: 35vh;
+    }
+
+
+    .video-placeholder {
+        height: 220px;
+        font-size: 22px;
+        letter-spacing: 5px;
+    }
+
+
+    .play-button {
+        width: 65px;
+        height: 65px;
+        font-size: 24px;
+    }
+
+
+    .video-placeholder p {
+        font-size: 16px;
+    }
+
+
+    .mobile-reserve {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9999;
+    }
+
+
+    .mobile-reserve a {
+        display: block;
+        padding: 15px 40px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+    }
+
+
+    body {
+        background-attachment: scroll;
+    }
+
+
+    .concept-section,
+    .info-section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+
+    .footer h2 {
+        font-size: 22px;
+    }
+
+
+    .footer p {
+        font-size: 11px;
+    }
 
 }
