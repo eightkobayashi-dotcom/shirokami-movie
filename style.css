@@ -417,6 +417,9 @@ html {
     font-size: 22px;
     letter-spacing: 4px;
     }
+    .container:first-of-type {
+    min-height: 75vh;
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -532,4 +535,67 @@ html {
     padding: 80px 0;
 
     background: rgba(255,255,255,0.05);
+}
+.container:first-of-type {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container:first-of-type::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 50%;
+
+    width: 600px;
+    height: 600px;
+
+    transform: translateX(-50%);
+
+    background: radial-gradient(
+        circle,
+        rgba(255,255,255,0.18),
+        transparent 70%
+    );
+
+    z-index: -1;
+}
+
+
+.container:first-of-type::after {
+    content: "SCROLL";
+
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    opacity: 0.8;
+
+    animation: scrollMove 2s infinite;
+}
+
+
+@keyframes scrollMove {
+
+    0%,100% {
+        transform: translate(-50%,0);
+    }
+
+    50% {
+        transform: translate(-50%,10px);
+    }
 }
