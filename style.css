@@ -881,3 +881,29 @@ html {
     letter-spacing: 2px;
 
 }
+.background-effect {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    pointer-events: none;
+
+    background:
+    radial-gradient(
+        circle at 50% 20%,
+        rgba(255,255,255,0.18),
+        transparent 35%
+    ),
+    linear-gradient(
+        rgba(0,0,0,0.15),
+        rgba(0,0,0,0.55)
+    );
+
+    z-index: -1;
+
+}
