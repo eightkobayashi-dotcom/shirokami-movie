@@ -428,6 +428,14 @@ html {
     font-size: 22px;
     letter-spacing: 5px;
     }
+    .play-button {
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    }
+    .video-placeholder p {
+    font-size: 16px;
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -647,4 +655,45 @@ html {
     letter-spacing: 10px;
 
     color: white;
+}
+.play-button {
+
+    width: 80px;
+    height: 80px;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.9);
+
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    padding-left: 5px;
+
+    transition: 0.3s;
+}
+
+
+.video-placeholder:hover .play-button {
+
+    transform: scale(1.15);
+
+}
+
+
+.video-placeholder p {
+
+    margin-top: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    letter-spacing: 8px;
+
+    font-size: 20px;
+
 }
