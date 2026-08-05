@@ -288,40 +288,55 @@ p {
     transition: transform 0.15s, box-shadow 0.15s;
 }
 .menu {
+
     position: fixed;
+
     top: 0;
     left: 0;
+
     width: 100%;
-    padding: 15px 0;
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
+
+    padding: 20px 0;
+
     z-index: 1000;
 
-    opacity: 0;
-    animation: menuShow 1s ease forwards;
-    animation-delay: 4s;
-    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+
+    gap: 35px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        transparent
+    );
+
+    backdrop-filter: blur(8px);
+
 }
 .menu a {
+
     color: white;
+
     text-decoration: none;
 
-    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
 
-    border: 1px solid rgba(255,255,255,0.5);
+    font-size: 15px;
 
-    border-radius: 30px;
+    letter-spacing: 4px;
 
-    font-size: 16px;
+    padding: 8px 5px;
 
-    width: 120px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
+    width: auto;
+
+    position: relative;
+
+    opacity: 0.85;
+
+    transition: 0.3s;
+
 }
 .menu a:hover {
     background: white;
@@ -435,6 +450,19 @@ html {
     }
     .video-placeholder p {
     font-size: 16px;
+    }
+    .menu {
+
+    gap: 15px;
+
+    }
+
+    .menu a {
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
     }
 }
 .info-box p:last-child {
@@ -732,4 +760,37 @@ html {
 }
 .title {
     margin-bottom: 40px;
+}
+.menu a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 0;
+
+    height: 1px;
+
+    background: white;
+
+    transition: 0.3s;
+
+}
+
+
+.menu a:hover::after {
+
+    width: 100%;
+
+}
+
+
+.menu a:hover {
+
+    opacity: 1;
+
 }
