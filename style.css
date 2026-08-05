@@ -112,6 +112,7 @@ p {
     box-shadow:
     0 10px 30px rgba(0,0,0,0.4);
 
+    animation: float 2s infinite ease-in-out;
 }
 
 .reserve-button:hover {
@@ -173,9 +174,6 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
-}
-.reserve-button {
-    animation: float 2s infinite ease-in-out;
 }
 
 @keyframes float {
