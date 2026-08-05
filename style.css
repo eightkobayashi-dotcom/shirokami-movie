@@ -420,6 +420,14 @@ html {
     .container:first-of-type {
     min-height: 75vh;
     }
+    .hero-video {
+    height: 35vh;
+    }
+    .video-placeholder {
+    height: 220px;
+    font-size: 22px;
+    letter-spacing: 5px;
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -598,4 +606,45 @@ html {
     50% {
         transform: translate(-50%,10px);
     }
+}
+.hero-video {
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 80px;
+}
+
+
+.video-placeholder {
+
+    width: 90%;
+    max-width: 900px;
+
+    height: 450px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    );
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    border-radius: 20px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 30px;
+
+    letter-spacing: 10px;
+
+    color: white;
 }
