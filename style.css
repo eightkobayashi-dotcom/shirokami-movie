@@ -464,6 +464,11 @@ html {
     letter-spacing: 2px;
 
     }
+    .info-box p {
+
+    font-size: 22px;
+
+    }
 }
 .info-box p:last-child {
     font-size: 24px;
@@ -792,5 +797,49 @@ html {
 .menu a:hover {
 
     opacity: 1;
+
+}
+.info-box {
+
+    text-align: center;
+
+    background:
+    rgba(255,255,255,0.08);
+
+    border: none;
+
+    border-top: 1px solid rgba(255,255,255,0.5);
+
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+
+    border-radius: 0;
+
+    padding: 35px 20px;
+
+    box-shadow: none;
+
+}
+
+
+.info-box h2 {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 6px;
+
+    opacity: 0.7;
+
+}
+
+
+.info-box p {
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 28px;
+
+    letter-spacing: 2px;
 
 }
