@@ -511,3 +511,13 @@ html {
 
     margin: 15px auto;
 }
+.fade-scroll {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+
+.fade-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -32,7 +32,7 @@
     <p class="catchcopy fade-item">
         「紙に書く」という行為は、未来に何を遺すのか─。
     </p>
-    <h2 class="section-title fade-item">CONCEPT</h2>
+    <h2 class="section-title fade-scroll">CONCEPT</h2>
     <div class="story fade-item" id="story">
         <p>
             忘れられた言葉と、残された想い。<br>
@@ -53,7 +53,7 @@
             <p id="timer">計算中...</p>
         </div>
     </div>
-    <h2 class="section-title fade-item">INFO</h2>
+    <h2 class="section-title fade-scroll">INFO</h2>
     <div class="info" id="info">
     <div class="info-box">
         <h2>上映日時</h2>
@@ -64,7 +64,7 @@
         <h2>上映場所</h2>
         <p>体育館</p>
     </div>
-    <h2 class="section-title fade-item">RESERVE</h2>
+    <h2 class="section-title fade-scroll">RESERVE</h2>
     <div id="reserve">
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyabLPAphyDqj_KKCKdhzAS1zDxVyMf5P0okwtWepVIZuEYg/viewform?usp=publish-editor">
         <button class="reserve-button" id="main-reserve-button">
@@ -133,6 +133,23 @@ function checkReserveButton() {
 
 window.addEventListener("scroll", checkReserveButton);
 window.addEventListener("load", checkReserveButton);
+</script>
+
+<script>
+const fadeItems = document.querySelectorAll(".fade-scroll");
+
+function scrollFade() {
+    fadeItems.forEach(item => {
+        const position = item.getBoundingClientRect().top;
+
+        if (position < window.innerHeight * 0.85) {
+            item.classList.add("show");
+        }
+    });
+}
+
+window.addEventListener("scroll", scrollFade);
+window.addEventListener("load", scrollFade);
 </script>
 
 </body>
