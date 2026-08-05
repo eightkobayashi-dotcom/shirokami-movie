@@ -697,3 +697,39 @@ html {
     font-size: 20px;
 
 }
+.title {
+    position: relative;
+    z-index: 1;
+
+    text-shadow:
+        0 0 10px rgba(255,255,255,0.3),
+        0 0 30px rgba(255,255,255,0.2),
+        0 5px 30px rgba(0,0,0,0.8);
+}
+
+
+.title::after {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    bottom: -25px;
+
+    transform: translateX(-50%);
+
+    width: 180px;
+    height: 2px;
+
+    background:
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.8),
+        transparent
+    );
+
+}
+.title {
+    margin-bottom: 40px;
+}
